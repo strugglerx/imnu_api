@@ -9,7 +9,7 @@ function getVcodeInfo(callback){
     request(options, function (err, res, body) {
         if (!err && res.statusCode == 200) {
              //console.log(res.headers)
-             console.log(res.headers['set-cookie'])
+             //console.log(res.headers['set-cookie'])
             var session = res.headers['set-cookie'][0];
             var vcodeSrc = "data:image/JPG;base64," + body.toString('base64');
             session = session.substr(0, session.indexOf(";"));

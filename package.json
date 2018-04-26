@@ -6,7 +6,6 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
-    "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.2",
     "express-static": "^1.2.5",
     "iconv-lite": "^0.4.19",
@@ -14,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test",
+    "test": "nodemon server.js",
     "start": "node server.js"
   }
 }

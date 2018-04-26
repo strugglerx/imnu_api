@@ -45,7 +45,7 @@ function login(username, password, verCode, session, callback) {
             });
  */
       newSession = 'username='+username+';'+session;
-      console.log(newSession);
+     // console.log(newSession);
       request({
             url: 'http://eip.imnu.edu.cn/EIP/sytsso/other.htm?appId=NEWJWXT&url=http://210.31.186.13/auth/main?url=/qbcj&ticket=',
             method: 'get',
@@ -68,7 +68,7 @@ function login(username, password, verCode, session, callback) {
                  var d1=COOKIE[0].substr(0,COOKIE[0].indexOf(";"));
                  var d2=COOKIE[2].substr(0,COOKIE[2].indexOf(";"));
                  var newSession1 =d1+';'+d2;
-                 console.log(newSession1);
+                // console.log(newSession1);
 
                  getScores(newSession1,function (obj){
                       return callback({

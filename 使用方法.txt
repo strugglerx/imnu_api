@@ -1,0 +1,10 @@
+cnpm install
+npm start
+
+router
+
+get'api/search'
+get'api/bookinfo'
+get'api/getcode',
+post'api/physical'
+post'api/score'
